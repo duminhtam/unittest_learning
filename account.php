@@ -1,20 +1,12 @@
 <?php
-    /**
-     * Do an regular Expression
-     * @author M T <MT@google.com>
-     */
-//    class do_regex{
-//        function _do($string = "full name: du minh tam."){
-//            preg_match("#\s*name: ([0-9a-zA-Z ]+)#", $string, $result);
-//            return $result[1];
-//        }
+    require 'do_regex.php';
+    
+//    abstract class do_regex{
+//     function _do(){}
+//        
 //    }
-    //file nam_parser.php
-    abstract class do_regex{
-     function _do(){}
-        
-    }
-    class account extends do_regex{
+    
+    class account{
         protected $user;
         
         function __construct(do_regex $do_regex = null){
