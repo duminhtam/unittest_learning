@@ -17,7 +17,7 @@ class account_test extends PHPUnit_Framework_TestCase {
         //check there is class generall variable
         $this->assertClassHasAttribute('user','account');
     }
-    
+     
     function test_get_name_from_string(){
        $name =  $this->account->get_name_from_string('name: duminhtam');
        
